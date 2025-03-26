@@ -2,10 +2,9 @@ import React, { FC, useState } from 'react';
 import { Box, Button, IconButton, Modal, Typography, Input } from '@mui/material';
 import { Edit as EditIcon, CloudUpload as CloudUploadIcon } from '@mui/icons-material';
 import { ImageWrapper, Container, EditButtonWrapper, ModalContent } from './styles';
-import { Menu } from '../Menu/';
+import { Menu } from '../Menu';
 
-
-export const Main: FC = ({ isAdmin = false }: { isAdmin?: boolean }) => {
+export const Header: FC = ({ isAdmin = false }: { isAdmin?: boolean }) => {
     const [ openChooseImage, setChooseImage ] = useState(false);
     const [ file, setFile ] = useState(null);
     

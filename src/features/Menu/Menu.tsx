@@ -22,17 +22,17 @@ const NAV = [
     }
 ];
 
-export const Menu: FC = () => {
+export const Menu: FC = ({ isAdmin }: { isAdmin?: boolean }) => {
     return (
         <Wrapper direction='row' justifyContent={'space-between'}>
-            <Stack direction='row' alignItems={'center'} spacing={2}>
+            <Stack direction='row' alignItems={'center'} spacing={'19px'}>
                 {
                     NAV.map(item => (
                         <Link key={item.name} href={item.to} underline='none'>{item.name}</Link>
                     ))
                 }
             </Stack>
-            <Stack direction='row' alignItems={'center'} spacing={2}>
+            <Stack direction='row' alignItems={'center'} spacing={'19px'}>
                 <TextField placeholder={'Search by model'} slotProps={{
                     input: {
                         endAdornment: (
@@ -42,7 +42,12 @@ export const Menu: FC = () => {
                     }}
                 />
                 <Link href={'/contacts'} underline='none'>CONTACTS</Link>
-                <Button variant='contained'>Log Out</Button>
+                {
+                    isAdmin && (
+                        <Button variant='contained'>Log Out</Button>
+                    )
+                }
+                
             </Stack>
         </Wrapper>
     );

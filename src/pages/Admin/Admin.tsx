@@ -1,10 +1,10 @@
 import React, { FC } from 'react';
-import { Main } from '../../features/Main';
+import { Header } from '../../features/Header';
 
 export const Admin: FC = () => {
     return (
         <div>
-            <Main isAdmin />
+            <Header isAdmin />
         </div>
     );
 };

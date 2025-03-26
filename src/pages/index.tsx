@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Routes, Route } from 'react-router';
 import { ROUTES } from '../shared/config/routes';
 import { Admin } from './Admin';
+import { Main } from './Main';
 
 export const Routing: FC = () => {
     return (
@@ -10,7 +11,7 @@ export const Routing: FC = () => {
                 index
                 path={ROUTES.INDEX}
                 element={
-                    <h1>Главная</h1>
+                    <Main />
                 }
             />
             <Route

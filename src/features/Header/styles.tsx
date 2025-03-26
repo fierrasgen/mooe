@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Card } from '@mui/material';
-import Image from './photo_2025-03-12 21.31.10.jpeg';
+import Image from './fonstola.ru_114827.jpg';
 
 export const ImageWrapper = styled.div`
     position: relative;
