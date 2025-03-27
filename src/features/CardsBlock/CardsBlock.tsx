@@ -5,7 +5,7 @@ import { Stack } from '@mui/material';
 
 interface CardsBlockProps {
     title: string;
-    cards: Array<{ name: string, href: string}>;
+    cards: Array<{ name: string, to: string}>;
 }
 
 export const CardsBlock: FC<CardsBlockProps> = ({ title, cards }) => {
@@ -25,7 +25,7 @@ export const CardsBlock: FC<CardsBlockProps> = ({ title, cards }) => {
                     cards?.map((card, index) => (
                         <Card 
                             key={index} 
-                            onClick={() => navigate(card.href)}
+                            onClick={() => navigate(card.to)}
                             sx={{
                                 alignItems: "center",
                                 justifyContent: "center"

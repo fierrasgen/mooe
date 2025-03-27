@@ -3,6 +3,9 @@ import { Routes, Route } from 'react-router';
 import { ROUTES } from '../shared/config/routes';
 import { Admin } from './Admin';
 import { Main } from './Main';
+import { About } from './About';
+import { Catalog } from './Catalog';
+import { Contacts } from './Contacts';
 
 export const Routing: FC = () => {
     return (
@@ -18,6 +21,19 @@ export const Routing: FC = () => {
                 path={ROUTES.ADMIN}
                 element={
                     <Admin />
+                }
+            />
+            <Route
+                path={ROUTES.ABOUT}
+                element={
+                    <About />
+                }
+            />
+            <Route path={ROUTES.CATALOG} element={<Catalog />} />
+            <Route
+                path={ROUTES.CONTACTS}
+                element={
+                    <Contacts />
                 }
             />
         </Routes>

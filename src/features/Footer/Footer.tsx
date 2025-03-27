@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Stack, Button } from '@mui/material';
+import { Stack, Link } from '@mui/material';
 import { Facebook as FacebookIcon, } from '@mui/icons-material';
 import { Logo, Wrapper, SocialNetworkButton } from './styles';
 
@@ -30,7 +30,7 @@ export const Footer: FC = () => {
         <Wrapper>
             <Logo>MOOE</Logo>
             <Stack direction={'row'} spacing={'10px'}>{SOCIAL_NETWORK.map(item => (
-                <SocialNetworkButton key={item.name}>{item.icon}</SocialNetworkButton>
+                <Link key={item.name} target={'_blank'} href={item.to}>{item.icon}</Link>
             ))}</Stack>        
         </Wrapper>
     );

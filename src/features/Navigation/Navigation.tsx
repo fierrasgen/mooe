@@ -1,39 +1,21 @@
 import React, { FC } from 'react';
-import { Button, Stack, Link, TextField } from '@mui/material';
+import { Button, Stack, TextField } from '@mui/material';
 import { Search as SearchIcon } from '@mui/icons-material';
-import { Wrapper } from './styles';
+import { Wrapper, StyledLink, SearchInput } from './styles';
+import { MENU_NAV } from '../../shared/config/menuNav';
 
-const NAV = [
-    {
-        name: 'LIGHTING',
-        to: '/lighting'
-    }, {
-        name: 'FURNITURE',
-        to: '/furniture'
-    }, {
-        name: 'DECORATE',
-        to: '/decorate'
-    }, {
-        name: 'ELEMENTS',
-        to: '/elements'
-    }, {
-        name: 'PROJECTS',
-        to: '/projects'
-    }
-];
-
-export const Menu: FC = ({ isAdmin }: { isAdmin?: boolean }) => {
+export const Navigation: FC = ({ isAdmin }: { isAdmin?: boolean }) => {
     return (
         <Wrapper direction='row' justifyContent={'space-between'}>
             <Stack direction='row' alignItems={'center'} spacing={'19px'}>
                 {
-                    NAV.map(item => (
-                        <Link key={item.name} href={item.to} underline='none'>{item.name}</Link>
+                    MENU_NAV.map(item => (
+                        <StyledLink key={item.name} to={item.to}>{item.name}</StyledLink>
                     ))
                 }
             </Stack>
             <Stack direction='row' alignItems={'center'} spacing={'19px'}>
-                <TextField placeholder={'Search by model'} slotProps={{
+                <SearchInput placeholder={'Search by model'} slotProps={{
                     input: {
                         endAdornment: (
                         <SearchIcon />
@@ -41,7 +23,7 @@ export const Menu: FC = ({ isAdmin }: { isAdmin?: boolean }) => {
                     },
                     }}
                 />
-                <Link href={'/contacts'} underline='none'>CONTACTS</Link>
+                <StyledLink to={'/contacts'}>CONTACTS</StyledLink>
                 {
                     isAdmin && (
                         <Button variant='contained'>Log Out</Button>

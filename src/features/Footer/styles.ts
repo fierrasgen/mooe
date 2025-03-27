@@ -13,9 +13,3 @@ export const Logo = styled.div`
     height: 30px;
     border: 1px solid white;
 `;
-
-export const SocialNetworkButton = styled(IconButton)`
-    background: #D9DADA;
-    width: 13px;
-    height: 11px;
-`;

@@ -15,6 +15,7 @@ export const Card = styled(Stack)`
     position: relative;
     width: 25%;
     height: calc(100vw*0.2*0.84);
+    cursor: pointer;
 
     &::after {
         content: '';
