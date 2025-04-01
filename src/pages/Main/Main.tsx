@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { MainHeader } from '../../features/MainHeader';
 import { CardsBlock } from '../../features/CardsBlock';
 import { About } from '../../features/About';

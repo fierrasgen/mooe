@@ -1,12 +1,12 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import { Button, IconButton, Modal, Typography, Input } from '@mui/material';
 import { Edit as EditIcon, CloudUpload as CloudUploadIcon } from '@mui/icons-material';
 import { ImageWrapper, Container, EditButtonWrapper, ModalContent } from './styles';
 import { Navigation } from '../Navigation';
 
-export const MainHeader: FC = ({ isAdmin = false }: { isAdmin?: boolean }) => {
+export const MainHeader: FC<{ isAdmin?: boolean }> = ({ isAdmin = false }) => {
     const [ openChooseImage, setChooseImage ] = useState(false);
-    const [ file, setFile ] = useState(null);
+    // const [ file, setFile ] = useState(null);
     
     return (
         <ImageWrapper>
@@ -34,7 +34,7 @@ export const MainHeader: FC = ({ isAdmin = false }: { isAdmin?: boolean }) => {
                                     Upload files
                                     <Input
                                         type="file"
-                                        onChange={(event) => setFile(event.target.files)}
+                                        // onChange={(event) => setFile(event.target.files)}
                                     />
                                     </Button>
                             </ModalContent>                            

@@ -1,7 +1,18 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Stack, Link } from '@mui/material';
 import { Facebook as FacebookIcon, } from '@mui/icons-material';
-import { Logo, Wrapper, SocialNetworkButton, Text, Condition, Links } from './styles';
+import { Logo, Wrapper, Text, Condition, Links } from './styles';
+
+const CONDITIONS = [{
+    name: 'Terms and conditions',
+    link: ''
+},{
+    name: 'Privacy Policy',
+    link: ''
+},{
+    name: 'Terms and conditions',
+    link: 'Cookie preferences'
+}]
 
 const SOCIAL_NETWORK = [{
     name: 'facebook',
@@ -37,9 +48,11 @@ export const Footer: FC = () => {
                 </Stack>
             </Stack>
             <Condition direction={'row'} gap={'6px'}>
-                <Links>Terms and conditions</Links>
-                <Links>Privacy Policy</Links>
-                <Links>Cookie preferences</Links>
+                {
+                    CONDITIONS.map(item => (
+                        <Links key={item.name} color='#D9DADA' underline='none'>{item.name}</Links>
+                    ))
+                }
             </Condition>
             <Stack direction={'row'} spacing={'10px'}>{SOCIAL_NETWORK.map(item => (
                 <Link key={item.name} target={'_blank'} href={item.to}>{item.icon}</Link>

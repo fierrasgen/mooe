@@ -1,5 +1,5 @@
-import React, { FC } from 'react';
-import { Button, Stack, TextField } from '@mui/material';
+import { FC } from 'react';
+import { Button, Stack } from '@mui/material';
 import { Search as SearchIcon } from '@mui/icons-material';
 import { Wrapper, StyledLink, SearchInput } from './styles';
 import { MENU_NAV } from '../../shared/config/menuNav';

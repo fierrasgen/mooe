@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Wrapper } from './styles';
 import { Navigation } from '../Navigation';
 

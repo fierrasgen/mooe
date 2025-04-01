@@ -1,4 +1,4 @@
-import { Stack, IconButton } from '@mui/material';
+import { Stack, Link } from '@mui/material';
 import styled from 'styled-components';
 
 export const Wrapper = styled(Stack)`
@@ -24,8 +24,13 @@ export const Condition = styled(Stack)`
 
 `;
 
-export const Links = styled.a`
+export const Links = styled(Link)`
     color: #D9DADA;
     font-size: 14px;
     text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+        color: #000000;
+    }
 `;

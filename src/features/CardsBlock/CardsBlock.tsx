@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { useNavigate } from 'react-router';
 import { Wrapper, Title, Card, Image } from './styles';
 import { Stack } from '@mui/material';

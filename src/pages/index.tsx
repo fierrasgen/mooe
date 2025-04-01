@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Routes, Route } from 'react-router';
 import { ROUTES } from '../shared/config/routes';
 import { Admin } from './Admin';

@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Wrapper, Title, Text, Link } from './styles';
 import { Stack } from '@mui/material';
 import { Add as AddIcon } from '@mui/icons-material';
