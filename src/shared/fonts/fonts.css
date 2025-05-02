@@ -5,3 +5,11 @@
     src: url('./MOONLITE-SOLID.woff2') format('woff2'),
     url('./MOONLITE-SOLID.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'AvoidanceGenevra';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./AvoidanceGenevraRegular.woff2') format('woff2'),
+    url('./AvoidanceGenevraRegular.woff') format('woff');
+}
