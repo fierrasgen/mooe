@@ -3,7 +3,7 @@ import { Stack } from '@mui/material';
 
 export const Wrapper = styled(Stack)`
     border-top: 2px solid #C5C6C6;
-    padding: 22px 14px;
+    padding: 40px 85px;
 `;
 
 export const Title = styled.h2`

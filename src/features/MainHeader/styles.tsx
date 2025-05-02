@@ -12,7 +12,7 @@ export const ImageWrapper = styled.div`
 `;
 
 export const Container = styled.div`
-    padding: 100px;
+    padding: 122px 245px;
 `;
 
 export const EditButtonWrapper = styled.div`

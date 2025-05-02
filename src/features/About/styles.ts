@@ -4,10 +4,10 @@ import { Link as RouterLink } from 'react-router';
 
 export const Wrapper = styled(Stack)`
     border-top: 2px solid #C5C6C6;
-    padding: 22px 14px;
+    padding: 40px 85px;
 
     div {
-        width: 80%;
+        width: calc(100% - 160px);
     }
 `;
 

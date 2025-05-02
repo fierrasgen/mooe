@@ -9,7 +9,7 @@ export const About: FC = () => {
     return (
         <Wrapper   
             direction="row" 
-            spacing={"20px"}
+            spacing={"40px"}
             sx={{
                 alignItems: "flex-start",
                 justifyContent: "space-between"

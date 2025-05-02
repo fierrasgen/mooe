@@ -10,7 +10,7 @@ export const MainHeader: FC<{ isAdmin?: boolean }> = ({ isAdmin = false }) => {
     
     return (
         <ImageWrapper>
-            <Container> 
+            <Container>
                 <Navigation />
             </Container>
             {

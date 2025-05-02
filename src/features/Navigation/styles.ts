@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router';
 
 export const Wrapper = styled(Stack)`
+    width: 100%;
 `;
 
 export const StyledLink = styled(Link)`
@@ -24,5 +25,15 @@ export const SearchInput = styled(TextField)`
 
     fieldset {
         border: 2px solid #EBECEC;
+    }
+`;
+
+export const LogoWrapper = styled(Link)`
+    display: inline-block;
+    width: 4%;
+    min-width: 50px;
+
+    svg {
+        display: block;
     }
 `;

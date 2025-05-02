@@ -13,14 +13,14 @@ export const CardsBlock: FC<CardsBlockProps> = ({ title, cards }) => {
     return (
         <Wrapper 
             direction="row" 
-            spacing={"20px"}
+            spacing={"40px"}
             sx={{
                 alignItems: "flex-start",
                 justifyContent: "space-between"
             }}>
 
             <Title>{title}</Title>
-            <Stack direction="row" gap={'20px'} style={{ width: '80%'}}>
+            <Stack direction="row" gap={'40px'} style={{ width: 'calc(100% - 160px)'}}>
                 {
                     cards?.map((card, index) => (
                         <Card 
