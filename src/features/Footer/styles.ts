@@ -34,3 +34,13 @@ export const Links = styled(Link)`
         color: #000000;
     }
 `;
+
+export const LogoWrapper = styled(Link)`
+    display: inline-block;
+    width: 4%;
+    min-width: 50px;
+
+    svg {
+        display: block;
+    }
+`;
