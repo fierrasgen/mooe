@@ -5,6 +5,7 @@ export const Wrapper = styled(Stack)`
     border-top: 2px solid #C5C6C6;
     background: #5B5B5B;
     padding: 14px 23px;
+    letter-spacing: 0;
 `;
 
 
