@@ -14,7 +14,7 @@ export const Logo = styled.div`
     border: 1px solid white;
 `;
 
-export const Text = styled.text`
+export const Text = styled.p`
     text-transform: uppercase;
     color: #EBECEC;
     font-size: 16px;
@@ -24,10 +24,8 @@ export const Condition = styled(Stack)`
 
 `;
 
-export const Links = styled(Link)`
-    color: #D9DADA;
+export const StyledLink = styled(Link)`
     font-size: 14px;
-    text-decoration: none;
     transition: color 0.3s ease-in-out;
 
     &:hover {

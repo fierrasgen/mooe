@@ -26,4 +26,8 @@ export const Link = styled(RouterLink)`
     align-items: center;
     align-self: end;
     color: #727271;
+
+    > * {
+        letter-spacing: 0;
+    }
 `;

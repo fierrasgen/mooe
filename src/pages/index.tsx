@@ -6,6 +6,7 @@ import { Main } from './Main';
 import { About } from './About';
 import { Catalog } from './Catalog';
 import { Contacts } from './Contacts';
+import { ProductCard } from './ProductCard';
 
 export const Routing: FC = () => {
     return (
@@ -30,6 +31,12 @@ export const Routing: FC = () => {
                 }
             />
             <Route path={ROUTES.CATALOG} element={<Catalog />} />
+            <Route
+                path={ROUTES.CARD}
+                element={
+                    <ProductCard />
+                }
+            />
             <Route
                 path={ROUTES.CONTACTS}
                 element={

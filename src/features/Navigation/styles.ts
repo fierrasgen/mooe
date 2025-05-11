@@ -8,9 +8,16 @@ export const Wrapper = styled(Stack)`
 
 export const StyledLink = styled(Link)`
     color: #FEFEFE;
+
+    &:hover {
+        color: #000000;
+    }
 `;
 
 export const SearchInput = styled(TextField)`
+    > * {
+        letter-spacing: 0;
+    }
     div {
         border-radius: 8px;
     }
