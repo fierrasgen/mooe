@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 import { Header } from '../../features/Header';
 import { Content } from '../styles';
 import { FormControl, InputLabel, MenuItem, Select, Stack } from '@mui/material';
@@ -10,9 +10,9 @@ import { Filters } from './styles';
 
 
 export const Catalog: FC = () => {
-    const { category } = useParams();
-    const [filterCategory, setFilterCategory] = useState();
-    const [material, setMaterial] = useState();
+    // const { category } = useParams();
+    const [filterCategory, setFilterCategory] = useState<string | null>(null);
+    const [material, setMaterial] = useState<string | null>(null);
     
     return (
         <div>
@@ -26,7 +26,7 @@ export const Catalog: FC = () => {
                                 labelId={'category-select-label'}
                                 value={filterCategory}
                                 label="Category"
-                                onChange={(e) => setFilterCategory(e.target.value)}
+                                onChange={(e) => setFilterCategory(e.target.value as string)}
                             >
                                 <MenuItem value={'office'}>Office</MenuItem>
                                 <MenuItem value={'home'}>Home</MenuItem>
@@ -41,7 +41,7 @@ export const Catalog: FC = () => {
                                 labelId={'material-select-label'}
                                 value={material}
                                 label="Material"
-                                onChange={(e) => setMaterial(e.target.value)}
+                                onChange={(e) => setMaterial(e.target.value as string)}
                             >
                                 <MenuItem value={'metal'}>Metal</MenuItem>
                                 <MenuItem value={'papper'}>Paper</MenuItem>

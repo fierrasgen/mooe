@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 import { Header } from '../../features/Header';
 import { Content } from '../styles';
 import { Footer } from '../../features/Footer';
@@ -9,7 +9,7 @@ import { SocialLinks } from '../../entities/SocialLinks';
 
 
 export const ProductCard: FC = () => {
-    const { id } = useParams();
+    // const { id } = useParams();
     
     return (
         <div>
